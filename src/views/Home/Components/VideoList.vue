@@ -6,13 +6,13 @@
           :to="{path: '/coursedetail', query: { video_id: item.id } }"
           class="course"
           v-for="item in videoList"
-          >
+      >
         <div class="item_img">
           <img :src="item.cover_img"/>
         </div>
         <div class="video_info">
-          <div class="c_title">{{item.title}}</div>
-          <div class="price">¥ {{item.price/100}}</div>
+          <div class="c_title">{{ item.title }}</div>
+          <div class="price">¥ {{ item.price / 100 }}</div>
         </div>
       </router-link>
     </div>
@@ -20,14 +20,15 @@
 </template>
 
 <script>
+
 export default {
   name: "VideoList",
-  props:{
-    videoList:{
-      type:Array,
-      required:true
+  props: {
+    videoList: {
+      type: Array,
+      required: true
     }
-  }
+  },
 }
 </script>
 <style lang="scss" scoped>
@@ -36,6 +37,7 @@ export default {
   margin-top: 20px;
   padding: 0 13px;
 }
+
 //视频包括层
 .list {
   display: flex; //设置flex布局
@@ -43,11 +45,13 @@ export default {
   justify-content: space-between; //两端对齐
   padding-bottom: 55px;
 }
+
 //视频个体层
 .course {
   width: 48%;
   margin-bottom: 17px;
 }
+
 //视频图片
 .item_img {
   font-size: 0; //消除图片元素产生的间隙
@@ -58,6 +62,7 @@ export default {
     border-radius: 8px;
   }
 }
+
 .c_title {
   //设置超过两行隐藏 start
   display: -webkit-box;
@@ -72,6 +77,7 @@ export default {
   margin-top: 10px;
   color: #2b333b;
 }
+
 //价格
 .price {
   margin-top: 8px;

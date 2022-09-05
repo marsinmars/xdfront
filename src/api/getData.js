@@ -15,15 +15,15 @@ export const getBanner=()=>axios.get('/api/v1/pub/video_banner/list_banner')
 export const getVideoList=()=>axios.get('/api/v1/pub/video/list')
 
 //video detail interface
-export const getVideoDetail=(vid)=>axios.get('/api/v1/pub/video/find_detail_by_id?',{
+export const getVideoDetail=(vid)=>axios.get('/api/v1/pub/video/find_detail_by_id',{
     params:{
         video_id:vid
     }
 })
 
 //place order interface
-export const saveOrder=(token,vid)=>axios.get('/api/v1/pri/order/save',{
-    "video_id":vid
+export const saveOrder=(token,vid)=>axios.post('/api/v1/pri/order/save',{
+    "video_id":vid,
 },{
     headers:{
         "token":token
