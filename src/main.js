@@ -7,7 +7,8 @@ import {Toast, CellGroup, Field, Form, Swipe, SwipeItem, Tab, Tabs} from 'vant';
 import 'default-passive-events'
 
 //url = base url + request url
-axios.defaults.baseURL = "http://127.0.0.1:8089";
+axios.defaults.baseURL = "http://106.15.206.167:8089";
+// axios.defaults.baseURL = "http://127.0.0.1:8089";
 axios.defaults.timeout = 10000;
 
 

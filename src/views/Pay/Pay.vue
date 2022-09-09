@@ -39,7 +39,7 @@ export default {
       vid: computed(() => {
         return useRoute().query.video_id
       }),
-      router: useRouter()
+      router: useRouter(),
     })
 
     async function getDetail(vid) {

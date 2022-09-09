@@ -43,6 +43,7 @@ import {Toast} from "vant";
 import {useRouter} from "vue-router";
 import store from "@/store";
 import CommonFooter from "@/components/CommonFooter";
+import 'vant/es/toast/style';
 
 export default {
 

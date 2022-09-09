@@ -47,6 +47,7 @@
 import {registerApi} from "@/api/getData";
 import {reactive, toRefs} from "vue";
 import {Toast} from "vant";
+import 'vant/es/toast/style';
 
 export default {
   name: "Register",
